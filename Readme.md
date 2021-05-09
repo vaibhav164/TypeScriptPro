@@ -10,6 +10,7 @@
 ### Variable declaration in TypeScript:-
 
 1. in TS variable can be declared using <kbd>let</kbd> and <kbd>const</kbd>
+   or <kbd>var</kbd>
 
 - to asign type to a variable use syntax `let <variable name>:<variable type> = value;` or `let <variable name>:<variable type> ;` we have 2 more datatype which are null and undefined.
   e.g., let x:number= 10;
@@ -31,4 +32,24 @@ In this if we asign value to a variable during its declaration we cannot assign 
 e.g. ,
 ![inference](./Insertion.png)
 
-**In Typescript if we calla function without a parameter it throws an error**
+**In Typescript if we call a function without a parameter it throws an error**
+
+---
+
+# Mosh Lecture content:-
+
+- using var for variable initialisation ti make the varibale scope accross the whole function but using let makes the scope of variable to the respective block.
+
+```
+function add(){
+  for(var i=1; i<10; i++)
+    {console.log(i);}
+    console.log('Finamly'+i);
+
+}
+
+```
+
+now in above i valid for finaly console as well but if we had used let then it showed an error the resp[ective js file would had created but TS syntax must showed an erro that i is not defined for second console.log;
+
+If we dont setup the type of variable its default type becones any.
